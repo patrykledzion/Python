@@ -1,6 +1,3 @@
-# make-project [lang] > print(lista przedmiotow) > [?nazwa projektu]
-# tworzy w katalogu projects/[przedmiot]/[lang]/[data]-[nazwa projektu] > print(sciezka)/open in explorer
-
 ##CREATING PROJECT DIRECTORY FOR PROGRAMMIN (OR OTHER) CLASS##
 ##USAGE:
 ## make-project.py [lang]
