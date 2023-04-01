@@ -18,11 +18,11 @@ def main():
     if len(args) != 2:
         return print("Usage: make-project.py [lang]")
 
-    project_path = f"D:\\Projects\\"
+    project_path = f"D:\\Projects_test\\"
     if not os.path.exists(project_path):
         os.mkdir(project_path)
 
-    subjects = ['Subject_1', 'Subject_2']
+    subjects = os.listdir(project_path)
     print("Chose subject:")
 
     for i, subject in enumerate(subjects):
@@ -60,8 +60,8 @@ def main():
         while os.path.exists(project_path + path_end):
             path_end = "_"+str(project_number)
             project_number += 1
-
-        os.mkdir(project_path + path_end)
+        project_path+=path_end
+        os.mkdir(project_path)
         print(f"Project path: {project_path}")
         subprocess.Popen(f'explorer "{project_path}')
     except NameError:
